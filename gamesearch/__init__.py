@@ -1,6 +1,5 @@
 from .gamesearch import Gamesearch
 
 
-def setup(bot):
-    n = Gamesearch()
-    bot.add_cog(n)
+async def setup(bot):
+    await bot.add_cog(Gamesearch())
