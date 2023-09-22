@@ -1,6 +1,5 @@
 from .imdb import Imdb
 
 
-def setup(bot):
-    n = Imdb()
-    bot.add_cog(n)
+async def setup(bot):
+    await bot.add_cog(Imdb())
