@@ -2,5 +2,4 @@ from .anisearch import AniSearch
 
 
 async def setup(bot):
-    cog = AniSearch(bot)
-    await bot.add_cog(cog)
+    await bot.add_cog(AniSearch(bot))
